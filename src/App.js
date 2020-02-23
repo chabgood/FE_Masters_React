@@ -1,12 +1,6 @@
 import React from "react";
-
-const Pet = ({ name, breed, animal }) => {
-  return React.createElement("div", {}, [
-    React.createElement("h1", {}, name),
-    React.createElement("h1", {}, breed),
-    React.createElement("h1", {}, animal)
-  ]);
-};
+import { render } from "react-dom";
+import Pet from "./Pet";
 
 const App = () => {
   return React.createElement("div", {}, [
@@ -29,4 +23,4 @@ const App = () => {
   ]);
 };
 
-export default App;
+render(React.createElement(App), document.getElementById("root"));
