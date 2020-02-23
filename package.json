@@ -1,0 +1,22 @@
+{
+  "name": "FeMMasters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jshint": "^2.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "prettier": "^1.19.1"
+  },
+  "scripts": {
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "format": "prettier \"src/**/*.{js,html}\" --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
