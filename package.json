@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
+    "cross-env": "^7.0.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "^2.20.1",
@@ -24,8 +25,12 @@
     "dev": "parcel src/index.html",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "format": "prettier \"src/**/*.{js,html}\" --write",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:mock": "cross-env PET_MOCK=mock npm run dev"
   },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC"
