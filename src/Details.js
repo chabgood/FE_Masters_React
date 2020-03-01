@@ -2,12 +2,9 @@ import React, { Component } from "react";
 import pet from "@frontendmasters/pet";
 
 export default class Details extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      loading: true
-    };
-  }
+  state = {
+    loading: true
+  };
   componentDidMount() {
     pet
       .animal(this.props.id)
